@@ -1,0 +1,39 @@
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+h1 {
+  font-family: "Charis SIL", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+.first {
+  align-self: flex-start;
+}
+
+.third {
+  align-self: flex-start;
+}
+
+.fifth {
+  align-self: flex-start;
+}
+
+.second {
+  align-self: flex-end;
+}
+
+.fourth {
+  align-self: flex-end;
+}
