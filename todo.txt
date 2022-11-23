@@ -11,4 +11,6 @@ https://www.youtube.com/watch?v=Uk-uYmC3w5Y
 
 2. make nav btn full click
 3. make nav btn after on phone non white
-4.
+4. make nav burger on mobile
+5. type
+6. change cursor
