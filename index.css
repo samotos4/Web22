@@ -2,13 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
-font-family: 'Charis SIL', serif;
-font-family: 'Gentium Plus', serif;
-font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif;
-font-family: 'Mulish', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Source Serif Pro', serif;
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+font-family: "Charis SIL", serif;
+font-family: "Gentium Plus", serif;
+font-family: "Inter", sans-serif;
+font-family: "Merriweather", serif;
+font-family: "Mulish", sans-serif;
+font-family: "Playfair Display", serif;
+font-family: "Source Serif Pro", serif;
 
 .window {
   display: flex;
@@ -18,16 +24,71 @@ font-family: 'Source Serif Pro', serif;
 }
 
 section {
+  padding: 0 20px;
   /* width: 100vw; */
 }
 
-  .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   
-  }
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.a_contacts {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px ;
+  padding: 30px;
+  /* background-image: linear-gradient(180deg, transparent, red); */
+  border: #fff 2px solid;
+  border-radius: 30px;
+}
+
+#contacts {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 0;
+  gap: 50px;
+}
+
+
+.icon {
+  width: 50px;
+}
+
+.contacts_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.to_contacts {
+  color: #000;
+  font-weight: 600;
+  font-family: "inter" sans-serif;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  border: 2px solid #000;
+  /* background-image: linear-gradient(#2a59f6, #5d97f8); */
+}
+
+.to_contacts:hover {
+  color: white;
+  background-color: #000;
+  transition: 250ms;
+}
 
 #about {
   /* background-size: 100%;
@@ -35,15 +96,76 @@ section {
 background-repeat: repeat; */
 }
 
+#values {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  /* display: flex;
+  justify-content: center */
+}
+
+
+.values_container {
+  width: 100%;
+  max-width: 1300px;
+  gap: 30px 0;
+  /* overflow-y: auto; */
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 0 0 0 0px;
+}
+
+.values_scroll {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  gap: 50px 25px;
+  overflow-y: auto;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.values li {
+  padding: 30px 50px;
+  background-color: #fff198;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.values_icon {
+  width: 50px;
+}
+
+.name {
+   
+  width: 750px;
+  
+}
+
 .h1_red {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10vw;
 
-  padding: 150px 260px;
+  height: 700px;
   background-color: red;
   color: white;
-  border-radius:  30px 0 30px 0;
+  border-radius: 30px 0 30px 0;
+  text-align: center;
 }
 
 .sm_header {
@@ -64,16 +186,16 @@ background-repeat: repeat; */
   bottom: 30px;
 }
 
-.nava{
+.nava {
   text-decoration: none;
   color: white;
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 p {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 400;
 }
 
@@ -104,23 +226,31 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   margin: 0;
-  font-family: "Charis SIL", Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
   font-size: 80px;
 }
 
 h3 {
-  font-family: "Charis SIL", Georgia, "Times New Roman", Times, serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 400;
   font-size: 48px;
 }
 
 h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 140%;
   font-size: 32px;
+}
+
+h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 140%;
+  font-size: 20px;
 }
 
 .about_con {
@@ -129,8 +259,8 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
-  padding: 30px 50px;
+  max-width: 830px;
+  padding: 50px 50px;
   border: 5px solid #000;
   margin: 0 0 100px 0;
 }
