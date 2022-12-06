@@ -24,22 +24,19 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Mykhailo</title>
   </head>
-  <body>
+    <body styles"cursor: help;">
     <nav class="navbar">
-      <span class="menu_item"><a class="nava" href="#about">Про мене</a></span>
-      <span class="menu_item"
-        ><a class="nava" href="#contacts">Контакти</a></span
-      >
-      <span class="menu_item"><a class="nava" href="#values">Цінності</a></span>
-      <span class="menu_item"
-        ><a class="nava" href="#portfolio">Портфоліо</a></span
-      >
+        <a class="menu_item" href="#about">Про мене</a>
+        <a class="menu_item" href="#contacts">Контакти</a>
+      <a class="menu_item" href="#values">Цінності</a>
+        <a class="menu_item" href="#portfolio">Портфоліо</a>
     </nav>
     <section class="sm_header">
       <div class="h1_red">
-        <h1 title="Samotos Mykhailo" class="name">
-          Самотос <br />
-          Михайло
+
+          <h1>
+            <span class="auto-type"></span>
+          </h1>
         </h1>
       </div>
     </section>
@@ -107,5 +104,14 @@
         </div>
       </div>
     </section>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+          var typed = new Typed(".auto-type", {
+              strings: ["Cамотос Михайло", "Дизайнер", "І просто хороший пацан",],
+              typeSpeed: 40,
+              backSpeed: 60,
+              loop: true
+          })
+      </script>
   </body>
 </html>
