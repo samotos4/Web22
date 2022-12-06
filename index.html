@@ -24,14 +24,26 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Mykhailo</title>
   </head>
-    <body styles"cursor: help;">
-    <nav class="navbar">
-        <a class="menu_item" href="#about">Про мене</a>
+    <body>
+      
+  <header id="main-header" class="fixed-header" style="position: fixed;">
+    <nav>
+      <ul>
+        <li class="active"><a href="#home">Вітання</a></li>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#values">Цінності</a></li>
+        <li><a href="#portfolio">Портфоліо</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- <nav class="navbar">
+        <a class="menu_item active" href="#about">Про мене</a>
         <a class="menu_item" href="#contacts">Контакти</a>
       <a class="menu_item" href="#values">Цінності</a>
         <a class="menu_item" href="#portfolio">Портфоліо</a>
-    </nav>
-    <section class="sm_header">
+    </nav> -->
+    <section class="sm_header" id="home">
       <div class="h1_red">
 
           <h1>
@@ -113,5 +125,10 @@
               loop: true
           })
       </script>
+        <script src="dist/menuspy.js"></script>
+        <script>
+          var elm = document.querySelector('#main-header');
+          var ms = new MenuSpy(elm);
+        </script>
   </body>
 </html>

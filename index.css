@@ -1,3 +1,47 @@
+.active  {
+  background: red;
+  color: #FFF;
+}
+
+section {
+  height: 80vh;
+}
+
+header {
+  bottom: 30px;
+}
+
+header li {
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  background-color: black;
+  border-radius: 20px;
+  list-style: none;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+header a{
+  color: #fff;
+}
+
+header {
+  width: 100vw;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
+
 
 html {
   scroll-behavior: smooth;
