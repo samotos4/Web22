@@ -1,10 +1,15 @@
 .active  {
-  background: red;
+  background: #ff0000;
   color: #FFF;
 }
 
 section {
+  align-items: center;
+  justify-content: center;
   height: 80vh;
+  border: 5px solid #000;
+  margin: 150px 0;
+  padding: 5vw 0;
 }
 
 header {
@@ -42,7 +47,6 @@ header ul {
   gap: 20px;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -69,11 +73,7 @@ font-family: "Source Serif Pro", serif;
   width: 100vw;
 }
 
-section {
-  margin: 150px 0;
-  padding: 0 20px;
-  /* width: 100vw; */
-}
+
 
 .about {
   display: flex;
@@ -131,6 +131,7 @@ a {
 }
 
 .contacts_container {
+  gap: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -175,7 +176,7 @@ background-repeat: repeat; */
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  margin: 0 0 0 0px;
+  margin: 0 0 0 0;
   cursor: help;
 }
 
