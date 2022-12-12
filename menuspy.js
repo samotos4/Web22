@@ -77,7 +77,7 @@ var MenuSpy = function MenuSpy(element, options) {
   var defaults = {
     menuItemSelector : 'a[href^="#"]',
     activeClass      : 'active',
-    threshold        : 15,
+    threshold        : 5,
     enableLocationHash : true,
     hashTimeout      : 600,
     callback         : null
