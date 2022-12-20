@@ -14,13 +14,13 @@
   }
 
   header li {
-    width: 100px;
+
     text-decoration: none;
     color: white;
     font-family: "inter", sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    padding: 15px 20px;
+
     background-color: black;
     border-radius: 20px;
     list-style: none;
@@ -29,7 +29,12 @@
   }
 
   header a {
+    display: flex;
+    height: 50px;
+    width: 140px;
     color: #fff;
+    justify-content: center;
+    align-items: center;
   }
 
   header {
